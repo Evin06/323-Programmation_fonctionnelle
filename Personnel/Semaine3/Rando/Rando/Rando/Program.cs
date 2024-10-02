@@ -38,7 +38,7 @@ namespace Rando
                 }
             }
 
-            //Réduire la définition: on ne garde qu'un point sur cinq
+            // EXO 1.1 Réduire la définition: on ne garde qu'un point sur cinq
             var reducedTrackpoints = trackpoints
                 .Where((trackpoint, index) => index % 5 == 0)
                 .ToList();
@@ -47,6 +47,9 @@ namespace Rando
             {
                 Console.WriteLine($"Latitude: {trackpoint.Latitude}, Longitude: {trackpoint.Longitude}, Elevation: {trackpoint.Elevation}");
             }
+
+            //Exo 1.2 Calculer la longueur du tracé, son dénivelé positif et négatif
+
         }
 
         class Trackpoint
